@@ -116,12 +116,12 @@ section:nth-of-type(1)>img {
     height: 150px;
 }
 
-section:nth-of-type(2) {
+section:nth-of-type(2), section:nth-of-type(3) {
     display: flex;
     flex-direction: column;
 }
 
-section:nth-of-type(2)>a::before {
+section:nth-of-type(2)>a::before, section:nth-of-type(3)>a::before {
     content: url("../assets/icons/link.svg");
     margin-right: 10px;
     vertical-align: middle;
@@ -129,31 +129,31 @@ section:nth-of-type(2)>a::before {
     height: 20px;
 }
 
-section:nth-of-type(2)>a, section:nth-of-type(3)>a {
+section:nth-of-type(2)>a, section:nth-of-type(3)>a, section:nth-of-type(4)>a {
     text-decoration: underline transparent solid 1px;
 }
 
-section:nth-of-type(2)>a:hover, section:nth-of-type(3)>a:hover {
+section:nth-of-type(2)>a:hover, section:nth-of-type(3)>a:hover, section:nth-of-type(4)>a:hover {
     text-decoration: underline gray solid 1px;
 }
 
-section:nth-of-type(3) {
+section:nth-of-type(4) {
     display: flex;
     flex-direction: column;
 }
 
-section:nth-of-type(3) a {
+section:nth-of-type(4) a {
     margin-bottom: 5px;
 }
 
-section:nth-of-type(3) img {
+section:nth-of-type(4) img {
     margin-right: 10px;
     vertical-align: middle;
     width: 20px;
     height: 20px;
 }
 
-section:nth-of-type(4) a {
+section:nth-of-type(5) a {
     padding: 4px 8px;
     background-color: var(--color-bgnth);
     border-radius: 5px;
@@ -162,7 +162,7 @@ section:nth-of-type(4) a {
     cursor: default;
 }
 
-section:nth-of-type(4)>div {
+section:nth-of-type(5)>div {
     display: flex;
     flex-wrap: wrap;
 }
@@ -187,6 +187,10 @@ section:nth-of-type(3) {
 
 section:nth-of-type(4) {
     animation-delay: 0.4s;
+}
+
+section:nth-of-type(5) {
+    animation-delay: 0.5s;
 }
 
 @keyframes fadeIn {
